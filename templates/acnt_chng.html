@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <style>
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .topbar {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .topbar h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .left {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+        .left .firstlink, .left .secondlink {
+            display: inline-block;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .left .firstlink:hover, .left .secondlink:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .acnt {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+            margin-left: 550px;
+            margin-right: 550px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Community</h1>
+    </header>
+    <div class="topbar">
+        <h2>{{ user_info_dic.id }} 님의 마이페이지</h2>
+    </div>
+    <form class="left" action = "/acnt_chng" method="POST">
+        <div class = "acnt">
+            <input type="text" name="id" value = "{{ user_info_dic.id }}">
+            <input type="password" name="password" value = "{{ user_info_dic.pwd }}">
+            <input type="name" name="Name" value = "{{ user_info_dic.name }}">
+            <input type="telephone" name="Telephone" value="{{ user_info_dic.phone }}">
+        </div>
+        <button name="action" value="account_update" class="firstlink">
+            계정 수정
+        </button>
+        <button name="action" value="account_delete" class="secondlink">
+            계정 탈퇴
+        </button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            
+        }
+        .topbar {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .contain {
+            
+            display: flex;
+            justify-content: center;
+            margin-right: 130px;
+        }
+        table {
+            
+            border-top: 1px solid #444444;
+            border-collapse: collapse;
+            margin-left: 130px;
+            
+        }
+        th, td {
+            border-bottom: 1px solid #444444;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td {
+            background-color: #ece9e9;
+            
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+    <!-- 필요한 스타일 시트 및 기타 메타 정보를 추가 -->
+</head>
+<body>
+    <header>
+        <h1>Fashion Community</h1>
+    </header>
+    <div class="topbar">
+        <h2>{{ id }} 님의 마이페이지</h2>
+    </div>
+    <div class = "contain">
+        <table class="table">
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>수정</th>
+                <th>삭제</th>
+            </tr>
+            {% for data in bd_data_lst%}
+            <tbody>
+                <tr>
+                    <td>{{data.board_id}}</td>
+                    <td>{{data.title}}</td>
+                    <td>
+                        <a href="{{ url_for('edit', id=id, title=data.title) }}">수정</a>
+                    </td>
+                    <td>
+                        <a href="{{ url_for('delete_board',board_id = data.board_id) }}">삭제</a>
+                    </td>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
+    
+</body>
+</html>

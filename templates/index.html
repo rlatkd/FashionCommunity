@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .topbar {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 130px;
+        }
+        .secondArea {
+            display: flex;
+            margin-left: 130px;
+        }
+
+        .selectBtn button{
+            margin-right: 10px;
+        }
+        .push_btn {
+            margin-left: 10px;
+        }
+        select {
+            height: 30px;
+            width: 100px; /* 선택 상자 너비 조정 */
+            border-radius: 15px;
+            border: 1px solid #ccc; /* 선택 상자 테두리 스타일 */
+            padding: 5px; /* 내부 여백 조정 */
+        }
+        /* 버튼 스타일 */
+        .ulparent {
+            display: flex;
+            justify-content: center;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-left: 75px
+        }
+        li {
+            flex: 0 0 calc(33.3333% - 20px); /* 3개의 열로 나눔 (수정: 여백 제거) */
+            border-radius: 5px;
+            border: 3px solid #ccc;
+            margin: 10px;
+            background-color: #fff; /* 백그라운드 색상 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            list-style-type: none;
+            max-width: 300px;
+            max-height: 100%;
+            
+        }
+        li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .imgName {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .imginfo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .viewinfo {
+            display: flex;
+            align-items: center;
+        }
+        .cmtinfo {
+            margin-right: 50px;
+            display: flex;
+            align-items: center;
+        }
+        img {
+            width: 300px;
+            border-radius: 5px;
+        }
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        button {
+            display: inline-block;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button:hover {
+            background-color: #333;
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Community</h1>
+    </header>
+    <div class = "topbar">
+        {% if session.get('id') %}
+            <form class = "logoutbtn" action = "/logout">
+                <button>로그아웃</button>
+            </form>
+            <form class = "mypagebtn" action = "/mypage">
+                <button>마이페이지</button>
+            </form>
+            </form>
+            {% else %}
+            <form action="/login">
+                <button>
+                    로그인
+                </button>
+        {%with messages = get_flashed_messages()%}
+        {%if messages %}
+        <script type="text/javascript">
+        alert("{{messages[-1]}}");
+        </script>
+        {%endif%}
+        {%endwith%}    
+            </form>
+        {% endif %} 
+
+    </div>
+    <div class = "secondArea">
+        <form class = "selectBtn" method = "POST" action="/">
+            <select name = "sorting_option">
+                <option value = "최신순" selected>최신순</option>
+                <option value = "조회순">조회순</option>        
+            </select>
+            <button type="submit">선택</button>        
+        </form>
+        <form class = "writeBtn" action="/create">
+            <button>글쓰기</button>    
+        </form>    
+    </div>
+    <div class = "ulparent">
+        <ul>
+            {% for obj in data_lst%}
+            <a href="{{url_for('detail', id = obj.id)}}">
+                <li>
+                    <img src= "{{ obj.image }}" alt="bonobono"/>
+                    <span class = "imgName">{{obj.title}}</span>
+                    <div class = "imginfo">
+                        <div class = "viewinfo">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512"><path d="M23.271,9.419C21.72,6.893,18.192,2.655,12,2.655S2.28,6.893.729,9.419a4.908,4.908,0,0,0,0,5.162C2.28,17.107,5.808,21.345,12,21.345s9.72-4.238,11.271-6.764A4.908,4.908,0,0,0,23.271,9.419Zm-1.705,4.115C20.234,15.7,17.219,19.345,12,19.345S3.766,15.7,2.434,13.534a2.918,2.918,0,0,1,0-3.068C3.766,8.3,6.781,4.655,12,4.655s8.234,3.641,9.566,5.811A2.918,2.918,0,0,1,21.566,13.534Z"/><path d="M12,7a5,5,0,1,0,5,5A5.006,5.006,0,0,0,12,7Zm0,8a3,3,0,1,1,3-3A3,3,0,0,1,12,15Z"/></svg>
+                            <span>{{obj.views}}</span>
+                        </div>
+                        <div class = "cmtinfo">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M12.009,23.665c-.476,0-.955-.168-1.337-.507l-3.748-3.157h-2.923c-2.206,0-4-1.794-4-4V4C0,1.794,1.794,0,4,0H20c2.206,0,4,1.794,4,4v12c0,2.206-1.794,4-4,4h-2.852l-3.847,3.18c-.362,.322-.825,.484-1.293,.484ZM4,2c-1.103,0-2,.897-2,2v12c0,1.103,.897,2,2,2h3.289c.236,0,.464,.083,.645,.235l4.047,3.41,4.17-3.416c.18-.148,.405-.229,.638-.229h3.212c1.103,0,2-.897,2-2V4c0-1.103-.897-2-2-2H4Z"/></svg>
+                            <span>{{obj.comment_cnt}}</span>
+                        </div>
+                        <!-- span, div 차이 -->
+                        <span>{{obj.user_id}}</span>
+                    </div>
+                </li>
+            </a>
+            {% endfor %}
+
+        </ul>
+    </div>
+
+
+</body>
+</html>

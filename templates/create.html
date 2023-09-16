@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* 화면 가운데 정렬 */
+            height: 100vh; /* 뷰포트 높이 100%로 설정 */
+            font-family: 'Nanum Gothic', sans-serif;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-left: 130px;
+            margin-right: 182px;
+            margin-bottom: 80px;
+            width: 650px;
+        }
+        header h1 {
+            display: flex;
+            margin: 0;
+            font-size: 32px;
+            justify-content: center;
+            width: 650px;
+        }
+
+        form {
+              display : flex;
+              flex-direction: column;
+              width: 700px;
+              margin: 0 auto;
+        }
+        input {
+            margin: 10px;
+            width: 600px;
+            border-radius: 5px;
+        }
+        .title {
+            padding-right: 10px;
+            height: 20.5px;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+        textarea {
+            padding: 10px;
+            margin: 10px;
+            height: 300px;
+            width: 600px;
+            text-align: left;
+            border-radius: 10px;
+            resize: none;
+        }
+        button {
+            display: inline-block;
+            border: 2px solid #333;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+            width: 100px;
+            margin-left: 530px;
+        }
+        button:hover {
+            background-color: #333;
+            color: white;
+        }
+        label {
+            padding-left: 12px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Fashion Community</h1>
+    </header>
+    <form action="/create" method="POST", enctype="multipart/form-data">
+        <label for = "제목">제목</label>
+        <input type="text" name = "title" id = "제목">
+        <label for = "내용">내용</label>
+        <textarea name = "content"></textarea>
+        <label for = "imageUpload">이미지 선택:</label>
+        <input type="file" name="image" id="imageupload">
+        <button>작성완료</button>
+    </form>
+</body>
+</html>

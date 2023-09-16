@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse; /* 표 경계를 합침 */
+            width: 100%;
+        }
+
+        /* 표 헤더 스타일 */
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: left;
+            padding: 8px;
+        }
+
+        /* 표 데이터 스타일 */
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        
+
+        /* 테이블 전체 여백 조절 */
+        table {
+            margin-top: 20px;
+        }
+        body {
+            display: flex;
+            font-family: 'Nanum Gothic', sans-serif;
+            flex-direction: column;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            margin-bottom: 5px;
+        }
+        .detailContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        ul {
+            font-size: 15px;
+            justify-content: flex-end;
+            width: 500px;
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            border-bottom: 1px solid #d9d9d9;
+            border-top: 1px solid #d9d9d9;
+            padding: 5px;
+        }
+        li {
+            margin-left: 5px;
+        }
+        img {
+            width: 650px;
+            margin-bottom: 20px;
+        }
+        .detail {
+            width: 650px;
+            word-break: break-all;
+            margin-bottom: 20px;
+        }
+        .cmt_cnt {
+            width: 500px;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+        }
+        form {
+            width: 650px;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+            margin-right: 200px;
+            margin-top : 10px;
+        }
+        .cmt {
+            border-bottom: 1px solid #d9d9d9;
+            padding-bottom: 10px;
+            word-break: break-all;
+            width: 500px;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 555px;
+            border-radius: 10px;
+            resize: none;
+            text-align: left;
+            padding: 10px;
+        }
+        .topbar {
+            display: flex;
+            justify-content: flex-end;
+            text-align: left;
+        }
+        button {
+            align-items: center;
+            border-radius: 20px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        button:active {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .main_lst {
+            margin-top: 10px;
+        }
+        .cmt_nick {
+            margin-bottom: 5px;
+            color: #3498db;
+            font-weight: 500;
+        }
+    </style>
+    <script>
+        function change()
+        {
+            var A;
+            var B;
+            let id;
+            A = prompt("수정할 댓글 내용을 입력해주세요!", "");
+            B = document.getElementById("updated_content");
+            C = document.getElementById("reply").value;
+            D = document.getElementById("board_id").value;
+            console.log(D)
+            B.innerText = A;
+            id = A;
+          
+            let form = document.createElement('form'); // 폼객체 생성
+            let objs;
+            objs = document.createElement('input'); // 값이 들어있는 녀석의 형식
+            objs.setAttribute('type', 'hidden'); // 값이 들어있는 녀석의 type
+            objs.setAttribute('name', 'updated_content'); // 객체이름
+            objs.setAttribute('value', B.innerText); //객체값
+            form.appendChild(objs);
+            objs2 = document.createElement('input'); // 값이 들어있는 녀석의 형식
+            objs2.setAttribute('type', 'hidden'); // 값이 들어있는 녀석의 type
+            objs2.setAttribute('name', 'reply_id'); // 객체이름
+            objs2.setAttribute('value', C); //객체값
+            form.appendChild(objs2);
+            let objs3;
+            objs3 = document.createElement('input'); // 값이 들어있는 녀석의 형식
+            objs3.setAttribute('type', 'hidden'); // 값이 들어있는 녀석의 type
+            objs3.setAttribute('name', 'board_id'); // 객체이름
+            objs3.setAttribute('value', D); //객체값
+            form.appendChild(objs3);
+            form.setAttribute('method', 'post'); //get,post 가능
+            form.setAttribute('action', "/updatereply"); //보내는 url
+            document.body.appendChild(form);
+            form.submit();
+        }
+
+        function change2() {
+            B = document.getElementById("reply").value;
+            D = document.getElementById("board_id").value;
+            let form = document.createElement('form'); // 폼객체 생성
+            let objs;
+            objs = document.createElement('input'); // 값이 들어있는 녀석의 형식
+            objs.setAttribute('type', 'hidden'); // 값이 들어있는 녀석의 type
+            objs.setAttribute('name', 'reply_id'); // 객체이름
+            objs.setAttribute('value', B); //객체값
+            form.appendChild(objs);
+            let objs3;
+            objs3 = document.createElement('input'); // 값이 들어있는 녀석의 형식
+            objs3.setAttribute('type', 'hidden'); // 값이 들어있는 녀석의 type
+            objs3.setAttribute('name', 'board_id'); // 객체이름
+            objs3.setAttribute('value', D); //객체값
+            form.appendChild(objs3);
+            form.setAttribute('method', 'post'); //get,post 가능
+            form.setAttribute('action', "/deletereply"); //보내는 url
+            document.body.appendChild(form);
+            form.submit();
+        }
+    </script>
+</head>
+<body>
+    <div class = "topbar">
+        {% if session.get('id') %}
+        <form action="/logout">
+            <button>
+                로그아웃
+            </button>
+        </form>
+            
+            {% else %}
+            <form action="/login">
+                <button>
+                    로그인
+                </button>
+            </form>
+        {% endif %} 
+    </div>
+    <div class = "detailContent">
+        <h1>
+            {{data.title}}
+        </h1>
+        <ul>
+            <li>
+                {{data.user_id}}
+            </li>
+            <li>
+                {{data.views}}
+            </li>
+            <li>
+                {{data.comment_cnt}}
+            </li>
+            <li>
+                {{data.create_time}}
+            </li>
+        </ul>
+        <img src="{{ data.image }}" alt="bonobono">
+        <div class = "detail">
+            {{data.content}}
+            <br>
+            <form action="/detail/{{data.id}}" method = "post">
+                <textarea name = "content"></textarea>
+                <button>
+                    댓글 달기
+                </button>
+            </form>
+        </div>
+       
+        <input type="hidden" id="board_id" name="board_id" value={{data.id}}> 
+        <div>
+            <div class = "detail">
+            
+            <div>
+                댓글 {{data.comment_cnt}}개
+            </div>  
+        
+            <table>
+        <tr>
+            <th>작성자</th>
+            <th>내용</th>
+            <th>작성시간</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <form>
+            {%for replyItem in reply_data%}
+                {% if session.get('id') == replyItem.user_id%}
+                <tr>
+                    <td width="10%">{{replyItem.user_id}}</td>
+                    <td width="30%">{{replyItem.content}}</td>
+                    <td>{{replyItem.created_time}}</td>
+                    <td><input type="button" value="수정하기" onclick="change()"/></td>
+                    <td><input type="button" value="삭제하기" onclick="change2()"/></td>
+                    <input type="hidden" id="updated_content" name="updated_content">   
+                    <input type="hidden" id="reply" name="reply_id" value={{replyItem.reply_id}}> 
+                </tr>
+            {% else %}
+                <tr>
+                    <td>{{replyItem.user_id}}</td>
+                    <td>{{replyItem.content}}</td>
+                    <td>{{replyItem.created_time}}</td>
+                    <input type="hidden" id="updated_content" name="updated_content">   
+                    <input type="hidden" id="reply" name="reply_id" value={{replyItem.reply_id}}> 
+                </tr>
+            </form>
+            {% endif %} 
+        {%endfor%}  
+    </div>
+    </table>
+
+          
+    </div> 
+    {%with messages = get_flashed_messages()%}
+    {%if messages[-1] == "로그인을 해야 댓글 입력이 가능합니다." %}
+      <script type="text/javascript">
+        alert("{{messages[-1]}}");
+      </script>
+      {%endif%}
+    {%endwith%}  
+</body>
+</html>

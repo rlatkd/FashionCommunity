@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #808080;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #cdcdcd;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 50%;
+  }
+}
+</style>
+<body>
+
+<form>
+  <div class="container">
+    <h1>회원가입
+    </h1>
+    <hr>
+
+    <label for="email"><b>이메일</b></label>
+    <input type="text" placeholder="이메일을 입력해주세요." name="id" required>
+
+    <label for="psw"><b>비밀번호</b></label>
+    <input type="password" placeholder="비밀번호를 입력해주세요. " name="password" required>
+
+    <label for="name"><b>이름</b></label>
+    <input type="text" placeholder="이름을 입력해주세요. " name="name" required>
+
+    <label for="phone"><b>전화번호</b></label>
+    <input type="text" placeholder="전화번호를 입력해주세요." name="phone" required>
+    <div class="clearfix">
+        <button type="submit" class="signupbtn" formmethod="POST" formaction = "/signup"><b>회원가입</b></button>
+        <button type="submit" class="cancelbtn" formaction = "/login"><b>취소</b></button>
+    </div>
+    {%with messages = get_flashed_messages()%}
+    {%if messages[-1] == "중복된 아이디 입니다. " %}
+      <script type="text/javascript">
+        alert("{{messages[-1]}}");
+      </script>
+      {%endif%}
+    {%endwith%}
+  </div>
+</form>
+
+</body>
+</html>
