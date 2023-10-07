@@ -105,6 +105,8 @@
 - 개인정보나 게시글을 수정 및 삭제할 때, 경고창을 한 번 더 나오게 하여 user들의 편의성을 개선했으면 좋았을 것이다.
 
 ### 개발 피드백
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/ER.JPG" width="500" height="300"/>
+
 - DB Digram을 구성할 때, 외래키를 다르게하면 조금 더 간편한 혹은 부가적인 구성을 할 수 있을 것이다.
 
 <img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/feedback3.JPG" width="500" height="300"/>
