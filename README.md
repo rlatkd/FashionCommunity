@@ -42,7 +42,7 @@
 
 ## 구현 페이지
 -  메인 페이지
-<img src="https://github.com/shyun96/project_mini1/blob/main/readme_image/%EB%A9%94%EC%9D%B8.JPG" />
+<img src="https://github.com/rlatkd/miniProject1/blob/main/readme_image/mainPage.JPG" />
 -  로그인 페이지
 <img src="https://github.com/shyun96/project_mini1/blob/main/readme_image/%EB%A1%9C%EA%B7%B8%EC%9D%B8.JPG" />
 -  디테일 페이지
