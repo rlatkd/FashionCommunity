@@ -38,13 +38,15 @@
 |     6일차<br>(9/8)      | - 프로젝트 보고서, 발표 자료, QA하면서 오류 수정                 |
 |     7일차<br>(9/12)      | - 프로젝트 발표                             |
 ## ER DIAGRAM
-<img src="https://github.com/rlatkd/miniProject1/blob/main/readme_image/ER.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/ER.JPG" width="500" height="300"/>
 
 ## 구현 페이지
 -  메인 페이지
-<img src="https://github.com/rlatkd/miniProject1/blob/main/readme_image/mainPage.JPG" />
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/mainPage.JPG" />
+
 -  로그인 페이지
-<img src="https://github.com/shyun96/project_mini1/blob/main/readme_image/%EB%A1%9C%EA%B7%B8%EC%9D%B8.JPG" />
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/loginPage.JPG" />
+
 -  디테일 페이지
 <img src="https://github.com/shyun96/project_mini1/blob/main/readme_image/detail.JPG" width="400" height="600"/>
   
