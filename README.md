@@ -63,7 +63,7 @@
 <img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/myPage_index2.JPG" width="500" height="300"/>
 
 ### 마이 페이지 (내 게시글 수정3)
-<img src="" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/myPage_index3.JPG" width="500" height="300"/>
 
 
 
