@@ -47,6 +47,9 @@
 -  로그인 페이지
 <img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/loginPage.JPG" />
 
+-  글쓰기 페이지
+<img src=>
+
 -  디테일 페이지
 <img src="https://github.com/shyun96/project_mini1/blob/main/readme_image/detail.JPG" width="400" height="600"/>
   
