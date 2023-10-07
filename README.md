@@ -41,7 +41,7 @@
 <img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/ER.JPG" width="500" height="300"/>
 
 ## 구현 페이지
--  메인 페이지
+# 메인 페이지
 <img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/mainPage.JPG" />
 
 -  로그인 페이지
