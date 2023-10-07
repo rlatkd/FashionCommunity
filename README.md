@@ -53,9 +53,19 @@
 ### 디테일 페이지
 <img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/detailPage.JPG" width="500" height="300"/>
 
-### 마이 페이지 (계정정보수정)
+### 마이 페이지 (계정정보 수정)
 <img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/myPage_user.JPG" width="500" height="300"/>
-  
+
+### 마이 페이지 (내 게시글 수정1)
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/myPage_index.JPG" width="500" height="300"/>
+
+### 마이 페이지 (내 게시글 수정2)
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/myPage_index2.JPG" width="500" height="300"/>
+
+### 마이 페이지 (내 게시글 수정3)
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/myPage_index3.JPG" width="500" height="300"/>
+
+
 
 ## 프로젝트 후기
 #### 김상훈
