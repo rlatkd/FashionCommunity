@@ -1,4 +1,4 @@
-# :jeans: 미니 웹프로젝트 - fasion style 공유 커뮤니티:jeans:
+# :jeans: 미니 웹프로젝트 - Fashion Style 공유 커뮤니티:jeans:
 
 ## 목차
   - [개요 및 팀 소개](#개요) 
@@ -7,7 +7,7 @@
   - [프로젝트 후 개인적인 피드백](#개인-피드백)
 
 ## 개요
-- 프로젝트 이름: fasion style 커뮤니티 
+- 프로젝트 이름: Fashion Style 커뮤니티 
 - 프로젝트 목적 : 
     -   누구나 쉽게 이용 가능한 패션 커뮤니티 공유 사이트를 개설
     -   조회수 등을 바탕으로 얻은 데이터를 통해 소비자들의 니즈 파악
@@ -90,4 +90,4 @@
 - 때문에 가독성이 좋은 토드로 작성할 필요를 느끼게 되었습니다. 
 
 ## 개인 피드백
-- ㅇㅇㅇㅇㅇ
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/detailPage.JPG" width="500" height="300"/>
