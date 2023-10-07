@@ -38,32 +38,32 @@
 |     6일차<br>(9/8)      | - 프로젝트 보고서, 발표 자료, QA하면서 오류 수정                 |
 |     7일차<br>(9/12)      | - 프로젝트 발표                             |
 ## ER DIAGRAM
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/ER.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/ER.JPG" width="500" height="300"/>
 
 ## 구현 페이지
 ### 메인 페이지
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/mainPage.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/mainPage.JPG" width="500" height="300"/>
 
 ### 로그인 페이지
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/loginPage.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/loginPage.JPG" width="500" height="300"/>
 
 ### 글쓰기 페이지
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/createPage.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/createPage.JPG" width="500" height="300"/>
 
 ### 디테일 페이지
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/detailPage.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/detailPage.JPG" width="500" height="300"/>
 
 ### 마이 페이지 (계정정보 수정)
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/myPage_user.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/myPage_user.JPG" width="500" height="300"/>
 
 ### 마이 페이지 (내 게시글 수정1)
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/myPage_index.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/myPage_index.JPG" width="500" height="300"/>
 
 ### 마이 페이지 (내 게시글 수정2)
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/myPage_index2.JPG" width="500" height="300"/>
+<img src=" width="500" height="300"/>
 
 ### 마이 페이지 (내 게시글 수정3)
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/myPage_index3.JPG" width="500" height="300"/>
+<img src="" width="500" height="300"/>
 
 
 
