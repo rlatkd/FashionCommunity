@@ -90,4 +90,5 @@
 - 때문에 가독성이 좋은 토드로 작성할 필요를 느끼게 되었습니다. 
 
 ## 개인 피드백
-<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/detailPage.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/feedback1.JPG" width="500" height="300"/>
+- 팀원 소개와 역할들을 구두로 발표했지만, 대략적인 설명을 PPT에 기술해놨으면 더 좋았을 것이다.
