@@ -45,13 +45,16 @@
 <img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/mainPage.JPG" width="500" height="300"/>
 
 ### 로그인 페이지
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/loginPage.JPG" />
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/loginPage.JPG" width="500" height="300"/>
 
 ### 글쓰기 페이지
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/createPage.JPG" />
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/createPage.JPG" width="500" height="300"/>
 
 ### 디테일 페이지
-<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/detailPage.JPG" width="400" height="600"/>
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/detailPage.JPG" width="500" height="300"/>
+
+### 마이 페이지 (계정정보수정)
+<img src="https://github.com/rlatkd/SSG_miniProject1/blob/main/readme_image/myPage_user.JPG" width="500" height="300"/>
   
 
 ## 프로젝트 후기
