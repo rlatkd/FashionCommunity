@@ -124,31 +124,40 @@
 <img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/feedback1.JPG" width="500" height="300"/>
 
 - 팀원 소개와 역할들을 구두로 발표했지만, 대략적인 설명을 PPT에 기술해놨으면 더 좋았을 것이다.
+- Project2: 해결 완료
 
 <img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/feedback2.JPG" width="500" height="300"/>
 
 - FlowChart 조금 더 직관적으로 이해가 갈 수 있도록 디자인했으면 발표 시 청중들이 편했을 것이다.
+- Project2: 해결 완료
 
 ### 8.2 구현 문제점
 
 - 회원가입 페이지에서 user가 데이터를 입력 시, 각 항목별 (ex 이메일) 형식을 지정해놨으면 조금 더 제대로 된 회원가입양식이 되었을 것이다.
-
+- Project2: 해결 중
 - 개인정보나 게시글을 수정 및 삭제할 때, 경고창을 한 번 더 나오게 하여 user들의 편의성을 개선했으면 좋았을 것이다.
+- Project2: 해결 중
 
 ### 8.3 개발 피드백
 
 <img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/ER.JPG" width="500" height="300"/>
 
 - DB Digram을 구성할 때, 외래키를 다르게하면 조금 더 간편한 혹은 부가적인 구성을 할 수 있을 것이다.
+- Project2: 해결 중
 
 <img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/feedback3.JPG" width="500" height="300"/>
 
 - 웹페이지 구축을 처음해봐서 전체적인 구현에는 성공했지만, 코드의 가독성과 쓸모없는 메모리를 너무 많이 차지하게 작성했다. 클린 코드의 필요성을 느꼈다.
+- Project2: 해결 중
 
 - public service에서 제공하는 공공 API를 이용하여 데이터를 채우지 못 한게 아쉽다.
+- Project2: 해결 미완
 
-- datalevel에서의 접근 통제에 대해 생각을 못 했기에 조금 더 공부할 필요를 느꼈다.
+- data level에서의 접근 통제에 대해 생각을 못 했기에 조금 더 공부할 필요를 느꼈다.
+- Project2: 해결 미완
 
 - frontend를 html과 css만을 이용해서 구현했지만, JavaScript로 구현하여 user들이 이용하기 더 편리한 웹사이트를 구축하고 싶다.
+- Project2: 해결 완료
 
 - 클라우드 교육 과정 기반이기에 차후 docker, k8s를 이용하여 Cloud 가상 환경을 통해 배포해보고 싶다.
+- Project2: 해결 중
