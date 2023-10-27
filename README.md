@@ -52,7 +52,7 @@
 
 ## 5. ER DIAGRAM
 
-<img src="https://github.com/rlatkd/SSGminiProject1/blob/main/readme_image/ER.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/ER.JPG" width="500" height="300"/>
 
 ## 6. 구현 페이지
 
