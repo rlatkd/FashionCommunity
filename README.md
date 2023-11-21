@@ -153,4 +153,4 @@
 
 - frontend를 html과 css만을 이용해서 구현했지만, JavaScript로 구현하여 user들이 이용하기 더 편리한 웹사이트를 구축하고 싶음
 
-- 클라우드 교육 과정 기반이기에 차후 docker, k8s를 이용하여 Cloud 가상 환경을 통해 배포해보고 싶음
+- 차후 docker, k8s를 이용하여 Cloud 가상 환경을 통해 배포해보고 싶음
