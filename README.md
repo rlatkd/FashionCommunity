@@ -1,13 +1,16 @@
-# :jeans: 미니 웹프로젝트 - Fashion Style 공유 커뮤니티:jeans:
+# web application project using Flask v2.3.3 & HTML5
 
-## 1. 목차
+## 0. 목차
 
-- [개요 및 팀 소개](#2-개요)
-- [진행 과정](#4-프로젝트-진행-과정)
-- [구현 화면](#6-구현-페이지)
-- [프로젝트 후 개인적인 피드백](#7-개인-피드백)
+- [개요 및 팀 소개](#1-개요)
+- [팀 소개](#2-팀-소개)
+- [진행 과정](#3-프로젝트-진행-과정)
+- [ER Diagram](#4-ER-Diagram)
+- [구현 화면](#5-구현-화면)
+- [후기](#6-후기)
+- [피드백](#7-피드백)
 
-## 2. 개요
+## 1. 개요
 
 - 프로젝트 이름: Fashion Style 커뮤니티
 - 프로젝트 목적 :
@@ -17,7 +20,7 @@
 - 개발 엔진 및 언어: python(flask), html, mysql
 - 멤버: 김상훈, 윤규희, 윤석현, 최인혁, 전경원
 
-## 3. 팀소개
+## 2. 팀 소개
 
 |                                                             김상훈                                                              |                                                               윤규희                                                               |                                                              윤석현                                                              |                                                              최인혁                                                               |                                                           전경원                                                           |
 | :-----------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------: |
@@ -40,7 +43,7 @@
 
 <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
 
-## 4. 프로젝트 진행 과정
+## 3. 프로젝트 진행 과정
 
 |          일별           | 내용                                                                        |
 | :---------------------: | --------------------------------------------------------------------------- |
@@ -50,45 +53,45 @@
 |     6일차<br>(9/8)      | - 프로젝트 보고서, 발표 자료, QA하면서 오류 수정                            |
 |     7일차<br>(9/12)     | - 프로젝트 발표                                                             |
 
-## 5. ER DIAGRAM
+## 4. ER Diagram
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/ER.JPG" width="500" height="300"/>
 
-## 6. 구현 페이지
+## 5. 구현 페이지
 
-### 6.1 메인 페이지
+### 5.1 메인 페이지
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/mainPage.JPG" width="500" height="300"/>
 
-### 6.2 로그인 페이지
+### 5.2 로그인 페이지
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/loginPage.JPG" width="500" height="300"/>
 
-### 6.3 글쓰기 페이지
+### 5.3 글쓰기 페이지
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/createPage.JPG" width="500" height="300"/>
 
-### 6.4 디테일 페이지
+### 5.4 디테일 페이지
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/detailPage.JPG" width="500" height="300"/>
 
-### 6.5.1 마이 페이지 (계정정보 수정)
+### 5.5.1 마이 페이지 (계정정보 수정)
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/myPage_user.JPG" width="500" height="300"/>
 
-### 6.5.2 마이 페이지 (내 게시글 수정1)
+### 5.5.2 마이 페이지 (내 게시글 수정1)
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/myPage_index.JPG" width="500" height="300"/>
 
-### 6.5.3 마이 페이지 (내 게시글 수정2)
+### 5.5.3 마이 페이지 (내 게시글 수정2)
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/myPage_index2.JPG" width="500" height="300"/>
 
-### 6.5.4 마이 페이지 (내 게시글 수정3)
+### 5.5.4 마이 페이지 (내 게시글 수정3)
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/myPage_index3.JPG" width="500" height="300"/>
 
-## 7. 프로젝트 후기
+## 6. 후기
 
 #### 김상훈
 
@@ -117,37 +120,37 @@
 - 완성에만 몰두하여 작성한 코드가 알아보기 힘들었으며 병합 과정에서도 어려움을 느꼈습니다.
 - 때문에 가독성이 좋은 코드로 작성할 필요를 느끼게 되었습니다.
 
-## 8. 개인 피드백
+## 7. 피드백
 
-### 8.1 PT 문제점
+### 7.1 PT 문제점
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/feedback1.JPG" width="500" height="300"/>
 
-- 팀원 소개와 역할들을 구두로 발표했지만, 대략적인 설명을 PPT에 기술해놨으면 더 좋았을 것이다.
+- 팀원 소개와 역할들을 구두로 발표했지만, 대략적인 설명을 PPT에 기술해놨으면 더 좋았을 것
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/feedback2.JPG" width="500" height="300"/>
 
-- FlowChart 조금 더 직관적으로 이해가 갈 수 있도록 디자인했으면 발표 시 청중들이 편했을 것이다.
+- FlowChart 조금 더 직관적으로 이해가 갈 수 있도록 디자인했으면 발표 시 청중들이 편했을 것
 
-### 8.2 구현 문제점
+### 7.2 구현 문제점
 
-- 회원가입 페이지에서 user가 데이터를 입력 시, 각 항목별 (ex 이메일) 형식을 지정해놨으면 조금 더 제대로 된 회원가입양식이 되었을 것이다.
-- 개인정보나 게시글을 수정 및 삭제할 때, 경고창을 한 번 더 나오게 하여 user들의 편의성을 개선했으면 좋았을 것이다.
+- 회원가입 페이지에서 user가 데이터를 입력 시, 각 항목별 (ex 이메일) 형식을 지정해놨으면 조금 더 제대로 된 회원가입양식이 되었을 것
+- 개인정보나 게시글을 수정 및 삭제할 때, 경고창을 한 번 더 나오게 하여 user들의 편의성을 개선했으면 좋았을 것
 
-### 8.3 개발 피드백
+### 7.3 개발 피드백
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/ER.JPG" width="500" height="300"/>
 
-- ER Digram을 구성할 때, 외래키를 다르게하면 조금 더 간편한 혹은 부가적인 구성을 할 수 있을 것이다.
+- ER Digram을 구성할 때, 외래키를 다르게하면 조금 더 간편한 혹은 부가적인 구성을 할 수 있을 것
 
 <img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/feedback3.JPG" width="500" height="300"/>
 
-- 웹페이지 구축을 처음해봐서 전체적인 구현에는 성공했지만, 코드의 가독성과 쓸모없는 메모리를 너무 많이 차지하게 작성했다. 클린 코드의 필요성을 느꼈다.
+- 웹페이지 구축을 처음해봐서 전체적인 구현에는 성공했지만, 코드의 가독성과 쓸모없는 메모리를 너무 많이 차지하게 작성함. 클린 코드의 필요성을 느낌
 
-- public service에서 제공하는 공공 API를 이용하여 데이터를 채우지 못 한게 아쉽다.
+- public service에서 제공하는 공공 API를 이용하여 데이터를 채우지 못 한게 아쉬움
 
-- data level에서의 접근 통제에 대해 생각을 못 했기에 조금 더 공부할 필요를 느꼈다.
+- data level에서의 접근 통제에 대해 생각을 못 했기에 조금 더 공부할 필요를 느낌
 
-- frontend를 html과 css만을 이용해서 구현했지만, JavaScript로 구현하여 user들이 이용하기 더 편리한 웹사이트를 구축하고 싶다.
+- frontend를 html과 css만을 이용해서 구현했지만, JavaScript로 구현하여 user들이 이용하기 더 편리한 웹사이트를 구축하고 싶음
 
-- 클라우드 교육 과정 기반이기에 차후 docker, k8s를 이용하여 Cloud 가상 환경을 통해 배포해보고 싶다.
+- 클라우드 교육 과정 기반이기에 차후 docker, k8s를 이용하여 Cloud 가상 환경을 통해 배포해보고 싶음
