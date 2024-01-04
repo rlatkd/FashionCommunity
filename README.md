@@ -1,4 +1,4 @@
-# web application project using Flask v2.3.3 & HTML5
+# 신세계아이앤씨 클라우드 엔지니어 양성과정 - 1차 미니프로젝트
 
 ## 0. 목차
 
