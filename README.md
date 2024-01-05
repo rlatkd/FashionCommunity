@@ -57,41 +57,41 @@
 
 ## 4. ER Diagram
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/ER.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/ER.JPG" width="500" height="300"/>
 
 ## 5. 구현 페이지
 
 ### 5.1 메인 페이지
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/mainPage.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/mainPage.JPG" width="500" height="300"/>
 
 ### 5.2 로그인 페이지
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/loginPage.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/loginPage.JPG" width="500" height="300"/>
 
 ### 5.3 글쓰기 페이지
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/createPage.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/createPage.JPG" width="500" height="300"/>
 
 ### 5.4 디테일 페이지
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/detailPage.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/detailPage.JPG" width="500" height="300"/>
 
 ### 5.5.1 마이 페이지 (계정정보 수정)
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/myPage_user.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/myPage_user.JPG" width="500" height="300"/>
 
 ### 5.5.2 마이 페이지 (내 게시글 수정1)
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/myPage_index.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/myPage_index.JPG" width="500" height="300"/>
 
 ### 5.5.3 마이 페이지 (내 게시글 수정2)
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/myPage_index2.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/myPage_index2.JPG" width="500" height="300"/>
 
 ### 5.5.4 마이 페이지 (내 게시글 수정3)
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/myPage_index3.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/myPage_index3.JPG" width="500" height="300"/>
 
 ## 6. 후기
 
@@ -126,11 +126,11 @@
 
 ### 7.1 PT 문제점
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/feedback1.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/feedback1.JPG" width="500" height="300"/>
 
 - 팀원 소개와 역할들을 구두로 발표했지만, 대략적인 설명을 PPT에 기술해놨으면 더 좋았을 것
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/feedback2.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/feedback2.JPG" width="500" height="300"/>
 
 - FlowChart 조금 더 직관적으로 이해가 갈 수 있도록 디자인했으면 발표 시 청중들이 편했을 것
 
@@ -141,11 +141,11 @@
 
 ### 7.3 개발 피드백
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/ER.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/ER.JPG" width="500" height="300"/>
 
 - ER Digram을 구성할 때, 외래키를 다르게하면 조금 더 간편한 혹은 부가적인 구성을 할 수 있을 것
 
-<img src="https://github.com/rlatkd/FashionCommunity/blob/main/readme_image/feedback3.JPG" width="500" height="300"/>
+<img src="https://github.com/rlatkd/fashion-community/blob/main/readme_image/feedback3.JPG" width="500" height="300"/>
 
 - 웹페이지 구축을 처음해봐서 전체적인 구현에는 성공했지만, 코드의 가독성과 쓸모없는 메모리를 너무 많이 차지하게 작성함. 클린 코드의 필요성을 느낌
 
